@@ -1,6 +1,74 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
 @import 'normalize';
+@import 'variables';
 
 body {
   font-family: 'Inter', sans-serif;
+  background-color: #e5e5f7;
+  opacity: 1;
+  background-image: radial-gradient(
+      #444cf7 0.7000000000000001px,
+      transparent 0.7000000000000001px
+    ),
+    radial-gradient(#444cf7 0.7000000000000001px, #e5e5f7 0.7000000000000001px);
+  background-size: 28px 28px;
+  background-position: 0 0, 14px 14px;
+}
+
+.container {
+  width: var(--width-container);
+  max-width: var(--max-width-container);
+  padding: var(--padding-container);
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.hero {
+  height: 100vh;
+  min-height: 500px;
+  position: relative;
+  --padding-container: 0;
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: var(--height-shape);
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: white;
+    z-index: -1;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%);
+  }
+
+  &__container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 3fr 2fr;
+    place-items: center;
+    gap: 20px;
+  }
+
+  &__title {
+    font-size: 4rem;
+  }
+
+  &__copy {
+    font-size: 1.2rem;
+    margin: 25px 0;
+  }
+
+  &__cta {
+    display: inline-block;
+    background: var(--color-btn);
+    color: #fff;
+    padding: var(--padding-btn);
+    text-align: center;
+    text-decoration: none;
+  }
+
+  &__img {
+    width: 95%;
+  }
 }
