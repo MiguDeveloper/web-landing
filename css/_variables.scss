@@ -9,4 +9,12 @@
   --text-btn: #fff;
   --padding-btn: 20px 35px;
   --height-shape: 18em;
+
+  @include breakpoint-down(small) {
+    --padding-btn: 20px 0;
+  }
+
+  @include breakpoint-down(medium) {
+    --height-shape: 14em;
+  }
 }

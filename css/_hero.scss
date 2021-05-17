@@ -1,0 +1,84 @@
+.hero {
+  height: 100vh;
+  min-height: 500px;
+  position: relative;
+  --padding-container: 0;
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: var(--height-shape);
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: white;
+    z-index: -1;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%);
+  }
+
+  &__container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 3fr 2fr;
+    place-items: center;
+    gap: 20px;
+
+    @include breakpoint-down(small) {
+      --padding-container: 45px 0;
+    }
+
+    @include breakpoint-down(medium) {
+      --padding-container: 60px 0;
+      grid-template-columns: 1fr;
+      grid-template-rows: 2fr 1fr;
+    }
+  }
+
+  &__tests {
+    @include breakpoint-down(small) {
+      text-align: center;
+    }
+  }
+
+  &__title {
+    font-size: 4rem;
+
+    @include breakpoint-down(small) {
+      font-size: 3rem;
+    }
+
+    @include breakpoint-down(medium) {
+      font-size: 3.8rem;
+    }
+  }
+
+  &__copy {
+    font-size: 1.2rem;
+    margin: 25px 0;
+  }
+
+  &__cta {
+    display: inline-block;
+    background: var(--color-btn);
+    color: #fff;
+    padding: var(--padding-btn);
+    text-align: center;
+    text-decoration: none;
+
+    @include breakpoint-down(small) {
+      display: block;
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+
+  &__img {
+    width: 95%;
+
+    @include breakpoint-down(medium) {
+      order: -1;
+      height: 95%;
+    }
+  }
+}

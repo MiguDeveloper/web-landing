@@ -1,0 +1,56 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #e5e5f7;
+  opacity: 1;
+  background-image: radial-gradient(
+      #444cf7 0.7000000000000001px,
+      transparent 0.7000000000000001px
+    ),
+    radial-gradient(#444cf7 0.7000000000000001px, #e5e5f7 0.7000000000000001px);
+  background-size: 28px 28px;
+  background-position: 0 0, 14px 14px;
+}
+
+.container {
+  width: var(--width-container);
+  max-width: var(--max-width-container);
+  padding: var(--padding-container);
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.cta {
+  display: inline-block;
+  background: var(--color-btn);
+  color: var(--text-btn);
+  padding: var(--padding-btn);
+  text-align: center;
+  text-decoration: none;
+
+  @include breakpoint-down(small) {
+    display: block;
+  }
+}
+
+main {
+  background: white;
+}
+
+.title {
+  font-size: 2.5rem;
+  text-align: var(--align-title);
+  color: var(--color-title);
+
+  @include breakpoint-down(small) {
+    font-size: 2rem;
+  }
+
+  &--border::after {
+    content: '';
+    display: block;
+    width: 100px;
+    margin-top: 20px;
+    height: 4px;
+    background: var(--color-primary);
+  }
+}

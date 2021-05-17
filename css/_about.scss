@@ -1,0 +1,44 @@
+.about {
+  display: grid;
+  grid-template-columns: 5fr 4fr;
+  place-items: center;
+
+  @include breakpoint-down(medium) {
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content 1fr;
+    gap: 80px;
+  }
+
+  @include breakpoint-down(small) {
+    gap: 40px;
+  }
+
+  &__course {
+    width: 90%;
+
+    @include breakpoint-down(medium) {
+      width: 100%;
+    }
+  }
+
+  &__paragraph {
+    margin: 20px 0;
+    line-height: 1.5;
+    font-weight: 300;
+  }
+
+  &__picture {
+    text-align: center;
+    @include breakpoint-down(medium) {
+      order: -1;
+    }
+  }
+
+  &__img {
+    width: 95%;
+
+    @include breakpoint-down(medium) {
+      width: 100%;
+    }
+  }
+}
