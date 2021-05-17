@@ -357,7 +357,7 @@ template {
   --padding-btn: 20px 35px;
   --height-shape: 18em;
 }
-@media (max-width: 31.1875) {
+@media (max-width: 31.1875em) {
   :root {
     --padding-btn: 20px 0;
   }
@@ -393,7 +393,7 @@ body {
   text-align: center;
   text-decoration: none;
 }
-@media (max-width: 31.1875) {
+@media (max-width: 31.1875em) {
   .cta {
     display: block;
   }
@@ -408,7 +408,7 @@ main {
   text-align: var(--align-title);
   color: var(--color-title);
 }
-@media (max-width: 31.1875) {
+@media (max-width: 31.1875em) {
   .title {
     font-size: 2rem;
   }
@@ -447,7 +447,7 @@ main {
   place-items: center;
   gap: 20px;
 }
-@media (max-width: 31.1875) {
+@media (max-width: 31.1875em) {
   .hero__container {
     --padding-container: 45px 0;
   }
@@ -459,7 +459,7 @@ main {
     grid-template-rows: 2fr 1fr;
   }
 }
-@media (max-width: 31.1875) {
+@media (max-width: 31.1875em) {
   .hero__tests {
     text-align: center;
   }
@@ -467,7 +467,7 @@ main {
 .hero__title {
   font-size: 4rem;
 }
-@media (max-width: 31.1875) {
+@media (max-width: 31.1875em) {
   .hero__title {
     font-size: 3rem;
   }
@@ -489,7 +489,7 @@ main {
   text-align: center;
   text-decoration: none;
 }
-@media (max-width: 31.1875) {
+@media (max-width: 31.1875em) {
   .hero__cta {
     display: block;
     width: 90%;
@@ -511,7 +511,7 @@ main {
   border-bottom: 1px solid #ccc;
   --padding-container: 30px 0 60px;
 }
-@media (max-width: 31.1875) {
+@media (max-width: 31.1875em) {
   .instructor {
     --padding-container: 60px 0;
   }
@@ -520,7 +520,7 @@ main {
   width: 70%;
   margin: 0 auto;
 }
-@media (max-width: 31.1875) {
+@media (max-width: 31.1875em) {
   .instructor__container {
     width: 90%;
   }
@@ -559,7 +559,7 @@ main {
     gap: 80px;
   }
 }
-@media (max-width: 31.1875) {
+@media (max-width: 31.1875em) {
   .about {
     gap: 40px;
   }
@@ -618,7 +618,7 @@ main {
     grid-template-areas: "card1 ." "card1 card2" "card3 card2" "card3 card4" ".     card4";
   }
 }
-@media (max-width: 31.1875) {
+@media (max-width: 31.1875em) {
   .card__container {
     width: 97%;
     grid-template-columns: 1fr;
@@ -680,13 +680,13 @@ main {
     grid-template-columns: repeat(6, 1fr);
   }
 }
-@media (max-width: 31.1875) {
+@media (max-width: 31.1875em) {
   .course {
     grid-template-columns: 1fr;
     --padding-container: 80px 0 30px;
   }
 }
-@media (max-width: 31.1875) {
+@media (max-width: 31.1875em) {
   .course--modifier {
     --padding-container: 0 0 80px;
   }
@@ -707,7 +707,7 @@ main {
     grid-column: 1/6;
   }
 }
-@media (max-width: 31.1875) {
+@media (max-width: 31.1875em) {
   .course__about {
     padding: 20px;
     width: 95%;
@@ -733,7 +733,7 @@ main {
     grid-column: 2/-1;
   }
 }
-@media (max-width: 31.1875) {
+@media (max-width: 31.1875em) {
   .course__picture {
     display: none;
   }
