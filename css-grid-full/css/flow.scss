@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+// El flow en grid es por defecto en row(filas)
+// pero podemos modificarlo a columnas, usando la propiedad 'grid-auto-flow'
+.container {
+  display: grid;
+  height: 600px;
+  width: 800px;
+  background: #09024b;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-flow: column;
+}
+
+[class^='item'] {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+.item1,
+.item8 {
+  background: #cfa107;
+}
+.item2,
+.item7 {
+  background: #156920;
+}
+.item3,
+.item6 {
+  background: #064d50;
+}
+
+.item4,
+.item5 {
+  background: #91016d;
+}

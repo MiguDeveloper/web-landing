@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  height: 600px;
+  width: 800px;
+  background: #09024b;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+[class^=item] {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+.item1 {
+  background: #cfa107;
+}
+
+.item2 {
+  background: #156920;
+}
+
+.item3 {
+  background: #064d50;
+}
+
+.item4 {
+  background: #91016d;
+}
+
+/*# sourceMappingURL=auto-fill.css.map */

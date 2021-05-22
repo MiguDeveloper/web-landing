@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 600px;
+  width: 800px;
+  background: #09024b;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 15px 10px;
+
+  // patrones de diseño entre columnas
+  // grid-template-columns: repeat(2, 1fr 2fr);
+
+  // shorthand
+  // abreviacion de grid-template-columns/rows
+  // definir de una sola propiedad filas y columnas usamos 'grid: filas / columnas'
+  //grid: repeat(3, 1fr) / repeat(4, 1fr);
+}
+
+[class^='item'] {
+  color: white;
+}
+
+.item1 {
+  background: #cfa107;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  // shorthand: para reemplazar lo de declarado lineas arriba
+  // abreviacion de grid-column/row podemos usar grid-area
+  // grid-area: inicioFila/inicioColumna/finFila/finColumna
+  grid-area: 1/1/2/-1;
+}
+.item2 {
+  background: #156920;
+  // shorthand
+  // abreviacion de grid-column-start/end: y grid-row-start/end
+  // podemos usar grid-colum y grid-row correspondientemente
+  grid-column: 1/4;
+  grid-row: 2/3;
+}
+.item3 {
+  background: #064d50;
+  grid-column: 4/5;
+  grid-row: 2/-1;
+}
+.item4 {
+  background: #91016d;
+  grid-column: 1/4;
+}
