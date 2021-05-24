@@ -1,0 +1,20 @@
+.mission {
+  padding: 80px 0;
+
+  &__textos {
+    grid-column: 7/-1;
+    grid-row: 1/-1;
+    margin-bottom: 20px;
+  }
+
+  &__img {
+    grid-column: 1/7;
+    grid-row: 1/-1;
+
+    @include breakpoint-down(medium) {
+      grid-column: 1/-1;
+      grid-row: 2/-1;
+      text-align: center;
+    }
+  }
+}

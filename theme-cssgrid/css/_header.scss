@@ -1,0 +1,35 @@
+.header {
+  height: 500px;
+
+  @include breakpoint-down(medium) {
+    height: auto;
+  }
+
+  &__img-hero {
+    width: 100%;
+    height: auto;
+    grid-column: 7/13;
+
+    @include breakpoint-down(medium) {
+      grid-column: 1/-1;
+      text-align: center;
+    }
+  }
+
+  &__textos-hero {
+    grid-column: 1/7;
+    padding-right: 20px;
+
+    @include breakpoint-down(medium) {
+      grid-column: 1/-1;
+      margin-top: 40px;
+    }
+    & p {
+      text-align: justify;
+
+      @include breakpoint-down(medium) {
+        text-align: center;
+      }
+    }
+  }
+}

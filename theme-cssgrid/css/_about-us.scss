@@ -1,0 +1,28 @@
+.about-us {
+  background: black;
+  color: white;
+  height: auto;
+  padding-bottom: 60px;
+
+  &__textos {
+    grid-column: 1/-1;
+    text-align: center;
+  }
+
+  &__parrafo {
+    color: #ccc;
+  }
+
+  &__numbers {
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  &__number {
+    text-align: center;
+    font-size: 30px;
+    width: 22%;
+  }
+}

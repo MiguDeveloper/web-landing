@@ -1,0 +1,17 @@
+.footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.textos-footer {
+  grid-column: 1/-1;
+  margin-bottom: 30px;
+}
+
+[class^='footer-item'] {
+  color: white;
+  grid-column: span 3;
+  font-size: 30px;
+}
