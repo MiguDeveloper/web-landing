@@ -3,4 +3,7 @@
   --color-primary: #667eea;
   --color-secondary: #764ba2;
   --button-padding: 20px 40px;
+  @include breakpoint-down(medium) {
+    --button-padding: 18px 40px;
+  }
 }

@@ -21,16 +21,29 @@
   &__texts {
     width: 80%;
     margin-bottom: 50px;
+
+    @include breakpoint-down(medium) {
+      width: 100%;
+      margin-bottom: 80px;
+    }
   }
 
   &__title {
     font-size: 3.2rem;
+
+    @include breakpoint-down(medium) {
+      font-size: 2.5rem;
+    }
   }
 
   &__subtitle {
     font-size: 2rem;
     font-weight: 300;
     margin: 15px 0;
+
+    @include breakpoint-down(medium) {
+      font: size 1.5rem;
+    }
   }
 
   &__cta {
