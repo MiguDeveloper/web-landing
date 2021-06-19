@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.section {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  scroll-snap-align: start;
+}
+.section.one {
+  background: #24a48a;
+}
+.section.two {
+  background: #d34f4f;
+}
+.section.three {
+  background: #435baf;
+}
+.section.four {
+  background: lightsalmon;
+}
+
+/*# sourceMappingURL=style.css.map */
